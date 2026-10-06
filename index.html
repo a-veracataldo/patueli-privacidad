@@ -1,0 +1,62 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidad · Patueli</title>
+<style>:root{color-scheme:light dark}body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px;line-height:1.6;color:#15130e;background:#faf8f2}
+@media(prefers-color-scheme:dark){body{color:#eee;background:#0f1115}table,th,td{border-color:#333 !important}code{background:#1f232c}}
+h1{font-size:1.9rem}h2{margin-top:2rem;font-size:1.3rem}h3{font-size:1.05rem}table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{border:1px solid #ddd;padding:8px;text-align:left;vertical-align:top}code{background:#eee;padding:1px 5px;border-radius:4px}footer{margin-top:3rem;font-size:.85rem;opacity:.7}</style></head>
+<body><h1>Política de privacidad — Patueli</h1>
+<p><strong>Última actualización: 6 de octubre de 2026</strong></p>
+<p>Patueli ("la app") es una aplicación para Android que registra tus compras a partir de las notificaciones de tus aplicaciones bancarias y las organiza por categoría para que lleves el control de tus gastos del mes.</p>
+<p>Esta política explica qué información maneja la app, cómo la usa y qué control tienes sobre ella.</p>
+<h2>1. Resumen en una frase</h2>
+<p><strong>Todo lo que la app lee y guarda queda en tu teléfono.</strong> La app no tiene servidores, no requiere cuenta de usuario y no envía tus datos a internet ni a terceros.</p>
+<h2>2. Qué datos procesa la app</h2>
+<h3>2.1 Notificaciones (permiso "Acceso a notificaciones")</h3>
+<p>Para detectar compras, la app usa el permiso de Android <strong>acceso a notificaciones</strong> (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>). Con él, la app recibe el texto de las notificaciones que muestran otras aplicaciones y:</p>
+<ul>
+<li>Analiza el texto para reconocer si corresponde a una <strong>compra con tarjeta</strong> o a una <strong>transferencia</strong> de una aplicación bancaria o fintech (por ejemplo Banco de Chile, BancoEstado, Santander, BCI, Scotiabank, Falabella CMR, Tenpo, MACH, Mercado Pago).</li>
+<li>Si lo es, extrae y guarda <strong>monto, nombre del comercio, fecha y hora, tipo de movimiento, medio de pago (crédito/débito/prepago) y el texto original de la notificación</strong>.</li>
+<li>Si la notificación <strong>no</strong> es una compra ni una transferencia (promociones, avisos de seguridad, mensajes de otras apps), se descarta y <strong>no se guarda</strong>. Únicamente para las notificaciones de bancos conocidos que no se reconocen, la app guarda las últimas 50 en tu teléfono (sección "Notificaciones no reconocidas" en Ajustes) para que puedas registrarlas a mano o descartarlas.</li>
+</ul>
+<p>La app <strong>no lee</strong> el contenido de tus mensajes, correos, chats ni de ninguna otra aplicación con otro fin que el descrito, y no guarda notificaciones que no sean de aplicaciones bancarias o fintech.</p>
+<h3>2.2 Datos que ingresas tú</h3>
+<p>Gastos que agregas a mano (monto y nombre), categorías que corriges, presupuesto mensual y preferencias de la app.</p>
+<h3>2.3 Datos que la app NO recopila</h3>
+<ul>
+<li>No pide ni almacena credenciales bancarias, números de tarjeta completos ni claves.</li>
+<li>No accede a tus contactos, ubicación, cámara, micrófono, archivos ni historial de navegación.</li>
+<li>No usa identificadores publicitarios ni herramientas de analítica o seguimiento.</li>
+<li>No contiene publicidad.</li>
+</ul>
+<h2>3. Dónde se guardan los datos y quién tiene acceso</h2>
+<ul>
+<li>Los datos se guardan en una base de datos <strong>local y privada</strong> de la app en tu teléfono, a la que otras aplicaciones no tienen acceso.</li>
+<li>La app <strong>no envía datos a internet</strong>. No existe un servidor de Patueli ni una cuenta en la nube.</li>
+<li>El permiso de internet que aparece en la ficha de la app lo requiere una librería del sistema (Google Play services) y no se usa para transmitir tus datos.</li>
+</ul>
+<h3>3.1 Copias de seguridad</h3>
+<p>Puedes exportar tus movimientos a un archivo JSON en la carpeta que elijas, y opcionalmente activar un backup automático nocturno en esa carpeta. <strong>Ese archivo contiene tus movimientos y el texto de las notificaciones originales, sin cifrar</strong>: trátalo como información personal. Tú decides dónde guardarlo y con quién compartirlo.</p>
+<p>Además, Android puede incluir los datos de la app en la copia de seguridad del dispositivo asociada a tu cuenta de Google (función "Copia de seguridad" de Android), según la configuración de tu teléfono. Esa copia está sujeta a la política de privacidad de Google.</p>
+<h2>4. Compartir datos</h2>
+<p>La app solo comparte información cuando <strong>tú lo decides explícitamente</strong>: al usar "Compartir" en un movimiento, al exportar un backup o al usar "Reportar formato" en una notificación no reconocida (que abre el selector de apps de Android para que elijas por dónde enviarla). En ningún caso la app comparte datos de forma automática.</p>
+<h2>4.1 Suscripción y pagos</h2>
+<p>Patueli ofrece una prueba gratuita de 7 días (que empieza con la primera compra registrada) y después un plan de pago mensual o anual. El pago se realiza exclusivamente a través de <strong>Google Play Billing</strong>: la app nunca ve ni almacena datos de tu tarjeta ni de tu cuenta de pago. Google Play nos entrega únicamente un identificador de la compra para saber si tu plan está activo; ese identificador se guarda en tu teléfono. El historial de compras está sujeto a la política de privacidad de Google Play.</p>
+<h2>5. Permisos que solicita la app y para qué</h2>
+<table><thead><tr><th>Permiso</th><th>Uso</th></tr></thead><tbody>
+<tr><td>Acceso a notificaciones</td><td>Detectar compras y transferencias en las notificaciones de tus apps bancarias. Es la función principal de la app.</td></tr>
+<tr><td>Notificaciones (POST_NOTIFICATIONS)</td><td>Avisarte cuando te acercas o superas tu presupuesto mensual, recordarte cuotas y avisarte si el backup automático dejó de funcionar.</td></tr>
+<tr><td>Inicio tras reinicio</td><td>Volver a programar esas alarmas cuando el teléfono se reinicia.</td></tr>
+</tbody></table>
+<p>Puedes revocar el acceso a notificaciones en cualquier momento desde <strong>Ajustes de Android → Notificaciones → Acceso a notificaciones</strong>. La app seguirá funcionando con los datos ya guardados y con los gastos que agregues a mano.</p>
+<h2>6. Conservación y eliminación</h2>
+<p>Los datos se conservan en tu teléfono hasta que los borres. Puedes:</p>
+<ul>
+<li>Eliminar movimientos uno a uno desde la app.</li>
+<li>Borrar todos los datos con <strong>Ajustes → Eliminar toda la data</strong>.</li>
+<li>Desinstalar la app, lo que elimina su base de datos local (los archivos de backup que hayas exportado a tus carpetas no se borran automáticamente).</li>
+</ul>
+<h2>7. Menores de edad</h2>
+<p>La app no está dirigida a menores de 13 años y no recopila conscientemente información de ellos.</p>
+<h2>8. Cambios a esta política</h2>
+<p>Si la app incorpora en el futuro alguna función que cambie la forma en que se manejan los datos (por ejemplo, sincronización en la nube), esta política se actualizará y la fecha de "Última actualización" cambiará. Los cambios relevantes se informarán dentro de la app.</p>
+<h2>9. Contacto</h2>
+<p>Para preguntas sobre privacidad: <strong>alexisveracataldo@gmail.com</strong>.</p><footer>Patueli · Esta página es la política de privacidad oficial de la aplicación Patueli para Android.</footer></body></html>
